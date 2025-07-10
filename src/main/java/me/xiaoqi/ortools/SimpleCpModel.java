@@ -1,4 +1,4 @@
-package me.xiaoqi.biz;
+package me.xiaoqi.ortools;
 
 import com.google.ortools.Loader;
 import com.google.ortools.sat.*;

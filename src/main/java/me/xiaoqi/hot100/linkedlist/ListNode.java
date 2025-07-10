@@ -1,4 +1,4 @@
-package me.xiaoqi.linkedlist;
+package me.xiaoqi.hot100.linkedlist;
 
 public class ListNode {
     int val;

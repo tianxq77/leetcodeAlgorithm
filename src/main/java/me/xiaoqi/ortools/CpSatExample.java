@@ -1,4 +1,4 @@
-package me.xiaoqi.biz;
+package me.xiaoqi.ortools;
 import static java.util.Arrays.stream;
 
 import com.google.ortools.Loader;

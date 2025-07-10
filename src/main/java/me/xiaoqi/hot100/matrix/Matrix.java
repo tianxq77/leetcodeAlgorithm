@@ -1,4 +1,4 @@
-package me.xiaoqi.matrix;
+package me.xiaoqi.hot100.matrix;
 
 import java.util.ArrayList;
 import java.util.HashSet;

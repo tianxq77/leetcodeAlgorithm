@@ -1,7 +1,7 @@
-package me.xiaoqi.linkedlist;
+package me.xiaoqi.hot100.linkedlist;
 
-import static me.xiaoqi.linkedlist.ListNode.buildList;
-import static me.xiaoqi.linkedlist.ListNode.printList;
+import static me.xiaoqi.hot100.linkedlist.ListNode.buildList;
+import static me.xiaoqi.hot100.linkedlist.ListNode.printList;
 
 public class SortListSolution {
     // 归并排序实现
