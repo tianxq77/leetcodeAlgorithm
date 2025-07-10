@@ -1,7 +1,7 @@
-package cn.hgplan.linkedlist;
+package me.xiaoqi.linkedlist;
 
-import static cn.hgplan.linkedlist.ListNode.buildList;
-import static cn.hgplan.linkedlist.ListNode.printList;
+import static me.xiaoqi.linkedlist.ListNode.buildList;
+import static me.xiaoqi.linkedlist.ListNode.printList;
 
 public class SortListSolution {
     // 归并排序实现

@@ -1,4 +1,4 @@
-package cn.hgplan.linkedlist;
+package me.xiaoqi.linkedlist;
 
 public class ListNode {
     int val;

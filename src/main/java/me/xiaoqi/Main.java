@@ -1,4 +1,4 @@
-package cn.hgplan;
+package me.xiaoqi;
 
 import com.google.ortools.Loader;
 import org.slf4j.Logger;
