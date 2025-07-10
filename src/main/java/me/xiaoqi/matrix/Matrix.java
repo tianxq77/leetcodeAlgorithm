@@ -1,39 +1,53 @@
 package me.xiaoqi.matrix;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 public class Matrix {
-
-
-
-
-
-
 
 
     public static void setZeroes(int[][] matrix) {
         Set<Integer> rows = new HashSet<>();
         Set<Integer> cols = new HashSet<>();
-        int m=matrix.length;
-        int n=matrix[0].length;
-        for(int i=0;i<m;i++){
-            for(int j=0;j<n;j++){
-                if(matrix[i][j]==0){
+        int m = matrix.length;
+        int n = matrix[0].length;
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (matrix[i][j] == 0) {
                     rows.add(i);
                     cols.add(j);
                 }
             }
         }
-        for(int i=0;i<m;i++){
-            for(int j=0;j<n;j++){
-                if(rows.contains(i)||cols.contains(j)){
-                    matrix[i][j]=0;
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (rows.contains(i) || cols.contains(j)) {
+                    matrix[i][j] = 0;
                 }
             }
         }
 
     }
 
+    public static void main(String[] args) {
+//       int[][] matrix = {{1,1,1},{1,0,1},{1,1,1}};
+//       setZeroes(matrix);
+//
+//       for(int i=0;i<matrix.length;i++){
+//           for(int j=0;j<matrix[0].length;j++){
+//               System.out.print(matrix[i][j]+" ");
+//           }
+//           System.out.println();
+//       }
+
+        int[][] matrix = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+        List<Integer> res = new Matrix().spiralOrder(matrix);
+        for (int i = 0; i < res.size(); i++) {
+            System.out.print(res.get(i) + " ");
+        }
+    }
 
     public List<Integer> spiralOrder(int[][] matrix) {
         if (matrix == null || matrix.length == 0 || matrix[0].length == 0) {
@@ -77,26 +91,5 @@ public class Matrix {
         }
 
         return res;
-    }
-
-
-
-    
-    public static void main(String[] args) {
-//       int[][] matrix = {{1,1,1},{1,0,1},{1,1,1}};
-//       setZeroes(matrix);
-//
-//       for(int i=0;i<matrix.length;i++){
-//           for(int j=0;j<matrix[0].length;j++){
-//               System.out.print(matrix[i][j]+" ");
-//           }
-//           System.out.println();
-//       }
-
-        int[][] matrix = {{1,2,3},{4,5,6},{7,8,9}};
-        List<Integer> res = new Matrix().spiralOrder(matrix);
-        for(int i=0;i<res.size();i++){
-            System.out.print(res.get(i)+" ");
-        }
     }
 }
